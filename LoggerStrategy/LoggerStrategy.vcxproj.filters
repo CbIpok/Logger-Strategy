@@ -16,6 +16,9 @@
     <Filter Include="Header Files\LoggerStrateges">
       <UniqueIdentifier>{85a8d492-cba3-45c4-a6a4-0bb33538a102}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\LoggerStrateges">
+      <UniqueIdentifier>{a9656f36-f97a-4b2f-ae27-d1d19590e069}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logger.h">
@@ -38,11 +41,17 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="LoggerStrateges\ConsoleLogger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Logger.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerStrateges\ConsoleLogger.cpp">
+      <Filter>Source Files\LoggerStrateges</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerStrateges\SimpleFileLogger.cpp">
+      <Filter>Source Files\LoggerStrateges</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerStrateges\TimedFileLogger.cpp">
+      <Filter>Source Files\LoggerStrateges</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

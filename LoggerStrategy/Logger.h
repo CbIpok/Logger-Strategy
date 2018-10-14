@@ -10,10 +10,11 @@ class Logger {
 public:
 	
 	Logger();
-	void set_strategy(LoggerStrategy& strategy);
+	void set_strategy(LoggerStrategy* strategy);//fix
 	void log_message(const std::string &message);
 private:
 
-	LoggerStrategy _loggerStrategy;
+	LoggerStrategy& _loggerStrategy;
+	ConsolLogger _default = ConsolLogger();
 
 };

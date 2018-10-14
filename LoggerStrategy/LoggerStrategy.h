@@ -3,5 +3,5 @@
 
 class LoggerStrategy {
 public:
-	virtual void write(const std::string &message) {};
+	virtual void write(const std::string &message) {};///
 };

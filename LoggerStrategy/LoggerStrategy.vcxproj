@@ -148,6 +148,8 @@
   <ItemGroup>
     <ClCompile Include="Logger.cpp" />
     <ClCompile Include="LoggerStrateges\ConsoleLogger.cpp" />
+    <ClCompile Include="LoggerStrateges\SimpleFileLogger.cpp" />
+    <ClCompile Include="LoggerStrateges\TimedFileLogger.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
