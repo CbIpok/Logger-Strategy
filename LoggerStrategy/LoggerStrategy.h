@@ -3,5 +3,6 @@
 
 class LoggerStrategy {
 public:
-	virtual void write(const std::string &message) {};///
+	std::string DEBUG_FLAG = "UNSPESIALIZED";
+	virtual void write(const std::string &message) = 0;///
 };
