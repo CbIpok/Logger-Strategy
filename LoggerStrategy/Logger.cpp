@@ -1,9 +1,8 @@
 #include "Logger.h"
 
-Logger::Logger() :
-	_default(new ConsolLogger())
+Logger::Logger() 
 {
-	_loggerStrategy = _default;
+	_loggerStrategy = nullptr;
 }
 
 void Logger::set_strategy(LoggerStrategy* strategy)
@@ -15,5 +14,12 @@ void Logger::set_strategy(LoggerStrategy* strategy)
 
 void Logger::log_message(const std::string & message)
 {
-	_loggerStrategy->write(message);
+	if (_loggerStrategy!= nullptr)
+		_loggerStrategy->write(message);
+}
+
+Logger& Logger::operator<<(const std::string & string)
+{
+	log_message(string);
+	return *this;
 }

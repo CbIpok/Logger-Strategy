@@ -3,8 +3,7 @@
 
 TimedFileLogger::TimedFileLogger(const std::string & fileName)
 {
-	this->DEBUG_FLAG = "TIMED";
-	_logFile.open(fileName);
+	_logFile.open(fileName, std::ofstream::app);
 	if (!_logFile.is_open())
 	{
 		throw(std::ios_base::failure("can not open file " + fileName));

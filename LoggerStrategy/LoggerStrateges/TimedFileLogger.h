@@ -11,7 +11,7 @@ public:
 	virtual void write(const std::string &message) override;
 
 private:
-	std::fstream _logFile;
+	std::ofstream _logFile;
 };
 
 
